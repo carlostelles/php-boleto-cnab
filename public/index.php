@@ -15,6 +15,11 @@ if (!session_id()) {
     session_start();
 }
 
+if ($_GET["php_info"]) {
+    phpinfo();
+    exit;
+}
+
 // Instantiate the app
 $settings = require __DIR__.'/../app/settings.php';
 $app      = new \Slim\App($settings);
