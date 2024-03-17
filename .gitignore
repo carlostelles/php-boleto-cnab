@@ -1,8 +1,6 @@
 *DB_Store*
 .IDEA/
-/www/api/log/app.log
-/www/api/vendor/
-/www/api/cache/twig/6b/
-/www/api/composer.lock
-/www/api/cache/
-/nbproject/private/
+vendor/
+cache/twig/6b/
+composer.lock
+cache/

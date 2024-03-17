@@ -1,18 +1,8 @@
 {
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "jersobh/php-boleto-cnab",
-                "version": "master",
-                "source": {
-                    "url": "https://github.com/jersobh/php-boleto-cnab.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        }
-    ],
+    "name": "carlostelles/php-boleto-cnab",
+    "description": "API's para boletos com registro (CNAB 240/CNAB 400), para gerar boletos, arquivos de remessa, processar arquivos de retorno e integrações com webservices.",
+    "type": "project",
+    "keywords": ["slim-framework", "API", "CNAB", "BOLETO"],
     "autoload": {
         "psr-4": {
             "App\\": [
@@ -21,7 +11,18 @@
             ]
         }
     },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "squizlabs/php_codesniffer": "2.*"
+    },
     "require": {
-        "jersobh/php-boleto-cnab": "*"
-    } 
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.0",
+        "slim/flash": "^0.1.0",
+        "monolog/monolog": "^1.13",
+        "quilhasoft/opencnabphp": "@dev",
+        "andersondanilo/cnab_php": "@dev",
+        "cobregratis/boletophp": "dev-2.x-dev"
+    },
+    "minimum-stability": "dev"
 }
