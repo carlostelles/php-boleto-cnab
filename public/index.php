@@ -16,7 +16,7 @@ if (!session_id()) {
 }
 
 if ($_GET["php_info"]) {
-    phpinfo();
+    echo phpinfo();
     exit;
 }
 
