@@ -15,10 +15,11 @@ if (!session_id()) {
     session_start();
 }
 
-if ($_GET["php_info"]) {
+// if ($_GET["php_info"]) {
+    echo extension_loaded("mongodb") ? "loaded\n" : "not loaded\n";
     echo phpinfo();
     exit;
-}
+// }
 
 // Instantiate the app
 $settings = require __DIR__.'/../app/settings.php';
